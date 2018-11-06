@@ -4,14 +4,14 @@ const pi = Math.PI;
 
 module.exports = (radius) => {
   function circumference(){
-    return pi * 2 * 2 radius;
+    return pi * 2 * radius;
   }
   function area(){
     return pi * radius * radius;
   }
   return{
     area: area,
-      circumference:circumference
+    circumference:circumference
   };
 };
 

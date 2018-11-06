@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const fs = require('fs'),
-      srcc = process.argv[2];
+      src = process.argv[2];
 
 if(typeof(src) === 'undefined' || process.argv.length !== 3){
   console.error('命令行参数不正确！');

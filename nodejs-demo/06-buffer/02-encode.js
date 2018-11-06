@@ -2,7 +2,7 @@
 
 const log = console.log,
       usr = process.argv[2],
-      pwd = process = process.argv[3];
+      pwd = process.argv[3];
 
 if(process.argv.length !== 4){
   console.error('命令行格式：cmd username password');
@@ -10,6 +10,6 @@ if(process.argv.length !== 4){
 }
 log('user name: %s\npassword: %s', usr, pwd);
 
- const buf = new Buffer(usr + ':' + pwd);
+const buf = new Buffer(usr + ':' + pwd);
 
- log('Base64:',buf.toString('Base64'));
+log('Base64:',buf.toString('Base64'));

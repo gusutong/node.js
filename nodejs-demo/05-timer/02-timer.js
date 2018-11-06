@@ -2,7 +2,7 @@
 
 console.log('start...');
 
-const timeID = setInerval(loop, 500);
+const timeID = setInterval(loop, 500);
 timeID.unref();
 
 function loop(){

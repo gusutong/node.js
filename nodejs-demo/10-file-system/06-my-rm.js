@@ -18,17 +18,16 @@ if(fs.statSync(src).isFile()) fs.unlinkSync(src);
 
 if(fs.statSync(src).isDirectory()) deleteDir(src);
 
-function deleteDir(folder);
-
-for(var i=0; i<files.length;i++){
-  var file = join(folder,files[i]);
+function deleteDir(folder){
+  var files;
+  for(var i=0; i<files.length;i++){
+    var file = join(folder,files[i]);
 
     if(fs.statSync(file).isFile()) {
       fs.unlinkSync(file);
       continue;
     } 
-
-  if(fs.statSync(file).isDirectory()) deleteDir(file);
+    if(fs.statSync(file).isDirectory()) deleteDir(file);
   }
   fs.rmdirSync(folder);
 }

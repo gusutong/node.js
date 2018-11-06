@@ -1,4 +1,4 @@
-#！/usr/bin/node
+#!/usr/bin/node
 
 module.exports = Math.PI;
 
